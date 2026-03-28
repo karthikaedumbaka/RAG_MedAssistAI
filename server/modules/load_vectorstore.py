@@ -46,7 +46,7 @@ if PINECONE_INDEX_NAME not in existing_indexes:
 index = pc.Index(PINECONE_INDEX_NAME)
 
 # Initialize embedding model once (outside function)
-embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+embed_model = GoogleGenerativeAIEmbeddings(model="models/embedding-004")
 
 
 def safe_embed(texts, retries=3, delay=3):
